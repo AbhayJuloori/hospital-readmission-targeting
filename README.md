@@ -1,6 +1,6 @@
 # CareTarget — Hospital Readmission Intervention Targeting
 
-**Live demo:** [caretarget-kwaqy47o0-abhayjulooris-projects.vercel.app](https://caretarget-kwaqy47o0-abhayjulooris-projects.vercel.app)
+**Live demo:** [caretarget-hgz0dl2zw-abhayjulooris-projects.vercel.app](https://caretarget-hgz0dl2zw-abhayjulooris-projects.vercel.app) &nbsp;·&nbsp; **API:** [yawningfold-caretarget-api.hf.space/health](https://yawningfold-caretarget-api.hf.space/health)
 
 > Most readmission programs ask *"who's sickest?"* — then send nurses to patients who would have been fine anyway. CareTarget asks *"who actually benefits from intervention?"* That's a different question, and it requires a different model.
 
