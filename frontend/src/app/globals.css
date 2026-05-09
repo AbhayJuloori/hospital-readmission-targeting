@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply antialiased; }
+  body { @apply bg-surface text-ink font-sans; }
+  ::selection { @apply bg-brand-100 text-brand-800; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center gap-2 px-6 py-3 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-700 transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98]; }
+  .btn-ghost { @apply inline-flex items-center gap-2 px-6 py-3 text-brand-600 font-semibold rounded-xl hover:bg-brand-50 transition-all duration-200; }
+  .card { @apply bg-white rounded-2xl border border-surface-border shadow-card p-6; }
+  .card-hover { @apply card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300; }
+  .badge-auto { @apply inline-flex items-center gap-1 px-3 py-1 rounded-full bg-success-light text-success font-semibold text-xs; }
+  .badge-review { @apply inline-flex items-center gap-1 px-3 py-1 rounded-full bg-warning-light text-warning-dark font-semibold text-xs; }
+  .badge-standard { @apply inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gray-100 text-gray-500 font-semibold text-xs; }
+  .section-label { @apply text-xs font-bold tracking-widest text-brand-600 uppercase mb-3; }
+  .gradient-text { @apply bg-gradient-to-r from-brand-600 to-teal-400 bg-clip-text text-transparent; }
+}
+
+@layer utilities {
+  .scrollbar-thin { scrollbar-width: thin; scrollbar-color: theme(colors.brand.200) transparent; }
+}
