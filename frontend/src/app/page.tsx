@@ -15,7 +15,6 @@ import {
   Activity,
   AlertTriangle,
   ArrowDown,
-  ArrowRight,
   BadgeCheck,
   BarChart3,
   BrainCircuit,
@@ -107,19 +106,6 @@ function Hero() {
           >
             Every year, U.S. hospitals pay $500M+ in penalties for preventable readmissions. CareTarget identifies who benefits most from intervention — not just who&apos;s highest risk.
           </motion.p>
-          <motion.div
-            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.78 }}
-          >
-            <a href="#demo" className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-extrabold text-brand-700 shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50">
-              See the Demo <ArrowRight className="h-4 w-4" />
-            </a>
-            <a href="#methodology" className="inline-flex items-center gap-2 rounded-xl px-6 py-3 font-bold text-white transition-all duration-200 hover:bg-white/10">
-              How It Works <ArrowDown className="h-4 w-4" />
-            </a>
-          </motion.div>
         </div>
 
         <div className="mx-auto mt-12 grid max-w-5xl grid-cols-3 gap-4">
