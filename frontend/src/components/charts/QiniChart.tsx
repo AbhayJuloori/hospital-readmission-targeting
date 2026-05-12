@@ -83,13 +83,13 @@ export function QiniChart({ height = 360 }: { width?: number; height?: number })
   return (
     <div className="h-full w-full transition-opacity duration-200" style={{ minHeight: height, opacity: isLoading ? 0.55 : 1 }}>
       <ResponsiveContainer width="100%" height={height}>
-        <LineChart data={chartData} margin={{ top: 20, right: 30, bottom: 60, left: 70 }}>
+        <LineChart data={chartData} margin={{ top: 8, right: 30, bottom: 44, left: 70 }}>
           <CartesianGrid stroke="#E2E8F0" strokeDasharray="3 3" />
           <XAxis
             dataKey="x"
             domain={[0, 100]}
             tickFormatter={value => `${value}%`}
-            label={{ value: '% of Population Targeted', position: 'insideBottom', dy: 40, fill: '#4A5568', fontSize: 12 }}
+            label={{ value: '% of Population Targeted', position: 'insideBottom', dy: 28, fill: '#4A5568', fontSize: 12 }}
             tick={{ fill: '#718096', fontSize: 12 }}
           />
           <YAxis
@@ -99,7 +99,7 @@ export function QiniChart({ height = 360 }: { width?: number; height?: number })
             tick={{ fill: '#718096', fontSize: 12 }}
           />
           <Tooltip content={<QiniTooltip />} />
-          <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ paddingTop: '8px' }} />
+          <Legend verticalAlign="top" height={36} iconType="circle" wrapperStyle={{ paddingBottom: '12px' }} />
           <ReferenceLine x={10} stroke="#0077B6" strokeDasharray="4 4">
             <Label value="10% budget" position="top" fill="#0077B6" fontSize={12} fontWeight={700} />
           </ReferenceLine>
